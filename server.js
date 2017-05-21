@@ -21,6 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', urlRouter);
 
 
-app.listen(process.env.PORT | 8000, () => {
-    console.log('App is listening on' + process.env.PORT | 8000 );
+app.listen(process.env.PORT || 8000, () => {
+    console.log('App is listening on' + process.env.PORT || 8000 );
 })
